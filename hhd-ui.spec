@@ -24,10 +24,10 @@ Configurator interface for Handheld Daemon.
 %build
 VERSION=$(cat package.json | grep -E '"version": "[0-9\.]+"' -o | grep -E "[0-9\.]+" -o)
 sed -i "s|\"version\": \"1.0.0\"|\"version\": \"$VERSION\"|" "electron/package.json"
-npm ci
+npm i
 npm run electron-build
 cd electron
-npm ci
+npm i
 npm run build
 chmod +x dist/hhd-ui.AppImage
 
