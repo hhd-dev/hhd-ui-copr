@@ -1,3 +1,6 @@
+%global __os_install_post %{_rpmconfigdir}/brp-compress %{_rpmconfigdir}/brp-strip-none %{_rpmconfigdir}/brp-strip-static-archive
+%global debug_package %{nil}
+
 Name:           hhd-ui
 Version:        2.2.1
 Release:        1%{?dist}
