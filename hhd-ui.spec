@@ -23,8 +23,7 @@ Requires: fuse
 Configurator interface for Handheld Daemon.
 
 %prep
-ls %{_sourcedir}
-%setup -q -n %{name}-v%{version}
+%setup -q -n %{name}-%{version}
 
 %build
 VERSION=$(cat package.json | grep -E '"version": "[0-9\.]+"' -o | grep -E "[0-9\.]+" -o)
