@@ -26,7 +26,6 @@ Configurator interface for Handheld Daemon.
 %setup -q -n %{name}-v%{version}
 
 %build
-cd %{name}-v%{version}
 VERSION=$(cat package.json | grep -E '"version": "[0-9\.]+"' -o | grep -E "[0-9\.]+" -o)
 sed -i "s|\"version\": \"1.0.0\"|\"version\": \"$VERSION\"|" "electron/package.json"
 npm ci
@@ -37,7 +36,6 @@ npm run build
 chmod +x dist/hhd-ui.AppImage
 
 %install
-cd %{name}-v%{version}
 mkdir -p %{buildroot}%{_bindir}
 cp -a electron/dist/hhd-ui.AppImage %{buildroot}%{_bindir}/hhd-ui
 install -Dm644 LICENSE %{buildroot}%{_licensedir}/%{name}/LICENSE
