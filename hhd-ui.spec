@@ -11,13 +11,9 @@ Source0:        %{URL}/archive/v%{version}.tar.gz
 BuildArch:      x86_64
 
 BuildRequires:  npm
-BuildRequires:  fuse-devel
 BuildRequires:  git
 BuildRequires:  desktop-file-utils
 BuildRequires:  systemd-rpm-macros
-
-Requires: hhd
-Requires: fuse
 
 %description
 Configurator interface for Handheld Daemon.
