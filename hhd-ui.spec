@@ -23,6 +23,7 @@ Requires: fuse
 Configurator interface for Handheld Daemon.
 
 %prep
+ls %{_sourcedir}
 %setup -q -n %{name}-v%{version}
 
 %build
