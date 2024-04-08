@@ -61,5 +61,3 @@ install -Dm644 art/icon.png %{buildroot}%{_datadir}/applications/hhd-ui/icon.png
 %{_datadir}/applications/hhd-ui/icon.png
 
 %changelog
-* Wed Apr 3 2024 Matthew Schwartz <njtransit215@gmail.com> - 2.2.0-1
-- Initial package creation
