@@ -2,7 +2,7 @@
 %global debug_package %{nil}
 
 Name:           hhd-ui
-Version:        2.2.2
+Version:        2.2.3
 Release:        1%{?dist}
 Summary:        Configurator interface for Handheld Daemon.
 License:        GPL-3.0-or-later
@@ -61,3 +61,5 @@ install -Dm644 art/icon.png %{buildroot}%{_datadir}/applications/hhd-ui/icon.png
 %{_datadir}/applications/hhd-ui/icon.png
 
 %changelog
+* Wed Apr 3 2024 Matthew Schwartz <njtransit215@gmail.com> - 2.2.0-1
+- Initial package creation
