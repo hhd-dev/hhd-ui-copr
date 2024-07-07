@@ -2,7 +2,7 @@
 %global debug_package %{nil}
 
 Name:           hhd-ui
-Version:        3.1.0
+Version:        3.1.1
 Release:        1%{?dist}
 Summary:        Configurator interface for Handheld Daemon.
 License:        GPL-3.0-or-later
