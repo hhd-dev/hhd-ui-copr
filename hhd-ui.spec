@@ -9,8 +9,6 @@ License:        GPL-3.0-or-later
 URL:            https://github.com/hhd-dev/hhd-ui
 Source0:        %{URL}/archive/v%{version}.tar.gz
 
-BuildArch:      noarch
-
 BuildRequires:  npm
 BuildRequires:  git
 BuildRequires:  desktop-file-utils
